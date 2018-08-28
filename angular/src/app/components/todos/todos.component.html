@@ -1,0 +1,13 @@
+
+<div class="container" >
+  <div class="d-flex justify-content-between">
+    <h4>Description</h4>
+    <h4>Date</h4>
+    <h4>Name</h4>
+  </div>
+  <div *ngFor="let todo of todos" class="d-flex justify-content-between">
+    <p>{{ todo.text }}</p>
+    <p>{{ todo.date }}</p>
+    <p>{{ todo.person.name }}</p>
+  </div>
+</div>
